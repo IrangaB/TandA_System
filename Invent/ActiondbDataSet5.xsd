@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ActiondbDataSet5" targetNamespace="http://tempuri.org/ActiondbDataSet5.xsd" xmlns:mstns="http://tempuri.org/ActiondbDataSet5.xsd" xmlns="http://tempuri.org/ActiondbDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ActiondbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ActiondbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Invent.Properties.Settings.GlobalReference.Default.ActiondbConnectionString" Provider="Microsoft.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblTimeAndActionTableAdapter" GeneratorDataComponentClassName="tblTimeAndActionTableAdapter" Name="tblTimeAndAction" UserDataComponentName="tblTimeAndActionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ActiondbConnectionString (Settings)" DbObjectName="Actiondb.dbo.tblTimeAndAction" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Activity FROM dbo.tblTimeAndAction</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Activity" DataSetColumn="Activity" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ActiondbConnectionString (Settings)" DbObjectName="Actiondb.dbo.tblTimeAndAction" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT distinct Activity FROM dbo.tblTimeAndAction</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ActiondbDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ActiondbDataSet5" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ActiondbDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblTimeAndAction" msprop:Generator_RowClassName="tblTimeAndActionRow" msprop:Generator_RowEvHandlerName="tblTimeAndActionRowChangeEventHandler" msprop:Generator_RowDeletedName="tblTimeAndActionRowDeleted" msprop:Generator_RowDeletingName="tblTimeAndActionRowDeleting" msprop:Generator_RowEvArgName="tblTimeAndActionRowChangeEvent" msprop:Generator_TablePropName="tblTimeAndAction" msprop:Generator_RowChangedName="tblTimeAndActionRowChanged" msprop:Generator_UserTableName="tblTimeAndAction" msprop:Generator_RowChangingName="tblTimeAndActionRowChanging" msprop:Generator_TableClassName="tblTimeAndActionDataTable" msprop:Generator_TableVarName="tabletblTimeAndAction">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Activity" msprop:Generator_UserColumnName="Activity" msprop:Generator_ColumnPropNameInTable="ActivityColumn" msprop:Generator_ColumnPropNameInRow="Activity" msprop:Generator_ColumnVarNameInTable="columnActivity">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
